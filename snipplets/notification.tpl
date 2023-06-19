@@ -97,3 +97,6 @@
         </div>
     </div>
 {% endif %}
+{% if store.country == 'AR' and template == 'home' and status_page_url %}
+      {% include "snipplets/notification.tpl" with {show_order_cancellation: true} %}
+   {% endif %}
