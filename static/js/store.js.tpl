@@ -101,16 +101,38 @@ DOMContentLoaded.addEventOrExecute(() => {
 
     {# /* // Follow order status notification */ #}
     
-    if ($notification_status_page.length > 0){
-        if (LS.shouldShowOrderStatusNotification($notification_status_page.data('url'))){
-            $notification_status_page.show();
-        };
-        jQueryNuvem(".js-notification-status-page-close").on( "click", function(e) {
-            e.preventDefault();
-            LS.dontShowOrderStatusNotificationAgain($notification_status_page.data('url'));
-        });
-    }
+    {# /* // Follow order status notification */ #}
 
+if ($notification_status_page.length > 0){
+    if (LS.shouldShowOrderStatusNotification($notification_status_page.data('url'))){
+        $notification_status_page.show();
+    };
+    jQueryNuvem(".js-notification-status-page-close").on( "click", function(e) {
+        e.preventDefault();
+        LS.dontShowOrderStatusNotificationAgain($notification_status_page.data('url'));
+    });
+}
+
+{# /* // Follow order cancellation notification */ #}
+
+if ($notification_order_cancellation.length > 0){
+    if (LS.shouldShowOrderCancellationNotification($notification_order_cancellation.data('url'))){
+        {% if not params.preview %}
+            {# Show order cancellation notification only if cookie banner is not visible #}
+
+            if (window.cookieNotificationService.isAcknowledged()) {
+        {% endif %}
+                $notification_order_cancellation.show();
+        {% if not params.preview %}
+            }
+        {% endif %}
+        $fixed_bottom_button.css("marginBottom", "40px");
+    };
+    jQueryNuvem(".js-notification-order-cancellation-close").on( "click", function(e) {
+        e.preventDefault();
+        LS.dontShowOrderCancellationNotification($notification_order_cancellation.data('url'));
+    });
+}
     {# /* // Follow order cancellation notification */ #}
     
     if ($notification_order_cancellation.length > 0){
