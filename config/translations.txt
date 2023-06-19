@@ -1,3 +1,45 @@
+--- --- Order cancellation
+ 
+es "Ver detalle de la compra >"
+pt "Ver detalhes da compra >"
+en "View purchase details >"
+es_mx "Ver detalle de la compra >"
+ 
+es "Si tenés problemas con otra compra, contactanos:"
+pt "Se você tem problemas com outra compra, entre em contato:"
+en "If you’re having problems with a different purchase, contact us:"
+es_mx "Si tienes problemas con otra compra, contáctanos:"
+ 
+es "Botón de arrepentimiento"
+pt "Botão de arrependimento"
+en "Cancel your order"
+es_mx "Botón de arrepentimiento"
+ 
+es "Pedí la cancelación de tu última compra"
+pt "Pedir o cancelamento da sua ultima compra"
+en "Request the cancellation of your last order"
+es_mx "Pide la cancelación de tu última compra"
+ 
+es "Si te arrepentiste, podés pedir la cancelación enviando este formulario."
+pt "Se você se arrependeu, pode solicitar o cancelamento enviando este formulário."
+en "If you’re having second thoughts, you can cancel your order using this form."
+es_mx "Si te arrepentiste, puedes pedir la cancelación enviando este formulario."
+ 
+es "¡Tu pedido de cancelación fue enviado!"
+pt "Seu pedido de cancelamento foi enviado!"
+en "Your cancellation request was sent!"
+es_mx "¡Tu pedido de cancelación fue enviado!"
+ 
+es "Vamos a ponernos en contacto con vos apenas veamos tu mensaje."
+pt "Entraremos em contato assim que recebermos sua mensagem."
+en "We’ll get in touch with you as soon as we see your message."
+es_mx "Vamos a ponernos en contacto contigo apenas veamos tu mensaje."
+ 
+es "Tu código de trámite es"
+pt "O código da sua solicitação é"
+en "Your request number is"
+es_mx "Tu código de trámite es"
+
 --- General
 --- Home
 --- --- Notifications
